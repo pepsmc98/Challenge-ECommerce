@@ -1,0 +1,90 @@
+.component__card__container {
+    align-items: center;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    padding: 0;
+}
+
+.component__card {
+    display: flex;
+    flex-direction: column;
+    width: 46%;
+    gap: 0.5rem
+}
+
+.component__card--full {
+    display: none;
+}
+
+.component__card__img {
+    width: 100%;
+}
+
+.component__card__name {
+    font-size: 0.875rem;
+    font-weight: 500;
+    line-height: 1rem;
+}
+
+.component__card__price {
+    font-size: 1rem;
+    font-weight: 700;
+    line-height: 1.1875rem;
+}
+
+.component__card__cod {
+    font-size: 0.875rem;
+    font-weight: 500;
+    line-height: 1rem;
+}
+
+.component__card__link {
+    color: var(--col-action-text);
+    font-size: 0.875rem;
+    font-weight: 700;
+    line-height: 1rem;
+}
+
+.component__card__tools {
+    position: relative;
+} 
+ 
+.component__card__buttons {
+     left: 67%;
+     position: absolute;
+     top: 5%;
+}
+ 
+.component__card__button {
+     background-color: transparent;
+     border: 0;
+     cursor: pointer;
+}
+
+
+@media (min-width: 768px) {
+
+    .component__card {
+        width: 23.25%;
+    }
+}
+
+
+@media (min-width: 1366px) { 
+    
+    .component__card {
+        width: 15.35%;
+    }
+
+    .component__card--full {
+        display: flex;
+    }
+}
+
+@media (min-width: 1440px) { 
+    
+    .component__card {
+        width: 15.45%;
+    }
+}

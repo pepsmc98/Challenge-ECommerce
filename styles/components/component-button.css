@@ -1,0 +1,19 @@
+.component__button {
+    border: 1px solid var(--col-action-text);
+    cursor: pointer;
+}
+
+.component__button--fill {
+    background-color: var(--col-action-text);
+    color: white;
+}
+
+.component__button--full {
+    width: 100%;
+}
+
+.component__button--clear {
+    background-color: var(--col-body-bg);
+    color: var(--col-action-text);
+}
+

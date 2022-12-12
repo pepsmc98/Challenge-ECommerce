@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Referencia favicon -->
+    <link rel="icon" type="image/png" href="../assets/generals/favicon.png"/>
+
+    <!-- Referencia fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+    <!-- Referencia de la hoja de estilo de Css -->
+    <link rel="stylesheet" href="../styles/reset.css">
+    <link rel="stylesheet" href="../styles/normalize.css">
+    <link rel="stylesheet" href="../styles/style.css">
+
+    <link rel="stylesheet" href="../styles/components/component-button.css">
+    <link rel="stylesheet" href="../styles/components/component-input.css">
+
+
+    <link rel="stylesheet" href="../styles/head.css">
+    <link rel="stylesheet" href="../styles/login.css">
+    <link rel="stylesheet" href="../styles/footer/left.css">
+    <link rel="stylesheet" href="../styles/footer/contact.css">
+    <link rel="stylesheet" href="../styles/developer.css">
+
+
+    <title>AluraGeek</title>
+</head>
+<body>
+    <header id="head" class="head">        
+        <nav class="head__navegacion">
+            <ul class="head__links">
+                <li class="head__search">
+
+                    <a href="../index.html">
+                        <img class="head__search__logo" src="../assets/generals/Logo.svg" alt="Logo AluraGeek">                        
+                    </a>
+
+                </li>
+                <li class="head__search__icon">
+                    <a href="#">
+                        <img src="../assets/generals/search.png" alt="Buscar">
+                    </a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+
+        <section class="login">
+
+            <div class="login__contact">
+
+                <h3 class="login__contact_title">Iniciar Sesión</h3>
+    
+                <form class="loginform" action="" name="form" id="formLogin">
+    
+                    
+                    <div class="loginform__input__container">
+                        <input class="loginform__input" type="email" name="email" placeholder="Escriba su correo electrónico" required data-type="email" data-email>
+                        <span class="loginform__message__error"> Escriba su correo electrónico</span>
+                    </div>
+    
+                    <div class="loginform__input__container">
+                        <input class="loginform__input" type="password" name="password" placeholder="Escriba su contraseña" required pattern="^(?=.*[a-z])(?=.*[A-Z])(?=.*[0-9])(?!.*[ !@#$%^&*_=+-]).{6,12}$" autocomplete="off" data-type="password" data-password>
+                        <span class="loginform__message__error"> Este campo no es valido</span>
+                    </div>
+                    <div class="loginform__button__container">
+                        <button type="submit" class="loginform__button component__button component__button--fill">Entrar</button>
+                       
+                        <!-- <a href="../screens/administator.html">
+                            <button type="button" class="loginform__button component__button component__button--fill component__button--full">Entrar</button>
+                        </a> -->
+                    </div>
+    
+                </form>
+            </div>
+        </section>
+
+        <section class="footer">
+
+            <div class="footer__left">
+
+                <a href="#head">
+                    <img class="footer__left__logo" src="../assets/generals/Logo.svg" alt="Logo AluraGeek">                        
+                </a>
+
+                <div class="footer__left__links">
+                    <a class="footer__left__link" href="#">Quienes somos</a>
+                    <a class="footer__left__link" href="#">Política de privacidad</a>
+                    <a class="footer__left__link" href="#">Programa de fidelidad</a>
+                    <a class="footer__left__link" href="#">Nuestras tiendas</a>
+                    <a class="footer__left__link" href="#">Quiero ser franquiciado</a>
+                    <a class="footer__left__link" href="#">Anuncie aquí</a>
+                </div>
+            </div>
+
+            <div class="footer__contact">
+
+                <h3 class="footer__contact__title">Hable con nosotros</h3>
+
+                <form class="footerform" action="https://formspree.io/f/xaykdbbr" method="post" name="form" id="formSpeakUs">
+
+                    <div class="component__input__container">
+                        <input class="component__input input__SpeakUs" type="text" name="nombre" placeholder="Nombre" required pattern="[\s\S]{1,40}" data-type="name" autocomplete="off">
+                        <label class="component__label" for="nombre">Nombre</label>
+                        <span class="component__message__error">Este campo no es valido</span>
+                    </div>
+
+                    <div class="component__input__container">
+                        <textarea class="component__textarea textarea__SpeakUs" rows="5" cols="40" id="message" name="mensaje" placeholder="Escribe tu mensaje" required maxlength="130" data-type="message"></textarea>
+                        <label class="component__label" for="mensaje">Mensaje</label>
+                        <span class="component__message__error">Este campo no es valido</span>
+                    </div>
+
+                    <button type="submit" class="component__button component__button component__button--fill">Enviar mensaje</button>
+
+                </form>
+
+            </div>
+
+        </section>
+
+    </main>
+    
+    <!-- Sección de Footer -->
+    <section class="developer">
+       <div class="developer__links">
+            <a href="https://github.com/pepsmc98" target="_blank">
+                <img class="developer__links__item" src="../assets/generals/github.png" alt="Logo Github">
+            </a>
+            <a href="https://www.linkedin.com/in/jos%C3%A9-alberto-mart%C3%ADnez-cenobio-40958220b/" target="_blank">
+                <img class="developer__links__item--small" src="../assets/generals/in.png" alt="Logo Linkedin">
+            </a>
+       </div>
+        <div class="developer__text">
+            <p>Desarrollado por José Alberto Martínez Cenobio</p>
+            <p class="developer__text__separator"> - </p>
+            <p>2022</p>
+        </div>
+    </section>
+    <!-- For simulate token -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/uuid/8.2.0/uuid.min.js" integrity="sha512-X0CJvcClD8EXFn5Oq8BD5lIsznKDfxb0Sf9Wr8MCCTyAEWaAAxr0Jvm3qyofsmN7eSHMZ0PPQGjVKroLAfexrA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    
+    <script type="module" src="../scripts/controllers/login.controller.js"></script>
+</body>
+</html>

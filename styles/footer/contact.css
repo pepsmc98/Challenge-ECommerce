@@ -1,0 +1,26 @@
+.footer__contact {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+
+}
+
+.footer__contact__title {
+    font-size: 1rem;
+    font-weight: 700;
+    line-height: 1.1875rem;;
+}
+
+
+@media (min-width: 768px) {
+    .footer__contact {
+        width: 64%;
+    }
+}
+
+
+@media (min-width: 1224px) {
+    .footer__contact {
+        width: 50%;
+    }
+}

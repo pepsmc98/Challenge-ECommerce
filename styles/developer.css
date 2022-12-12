@@ -1,0 +1,43 @@
+.developer__links {
+    align-items: center;
+    display: flex;
+    gap: 0.5rem;
+}
+
+.developer__links__item {
+    width: 2.5rem;
+}
+
+.developer__links__item--small {
+    width: 2rem;
+}
+
+.developer__text {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    font-weight: 500;
+    gap: 0.2rem;
+}
+
+.developer__text__separator {
+    display: none;
+}
+
+
+@media (min-width: 768px) {
+
+    .developer__links {
+        flex-direction: column;
+        gap: 0;
+    }
+
+    .developer__text {
+        flex-direction: row;
+        gap: 0.3rem;
+    }
+ 
+    .developer__text__separator {
+        display: block;
+    }   
+}

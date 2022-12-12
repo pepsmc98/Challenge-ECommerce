@@ -1,0 +1,22 @@
+.productsline__top {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0;
+}
+
+.productsline__top__link {
+    color: var(--col-action-text);
+    font-size: 0.875rem;
+    font-weight: 700;
+    line-height: 1rem;
+}
+
+
+@media (min-width: 768px) {
+
+    .productsline__top__link {
+        font-size: 1rem;
+        line-height: 1.1875rem;
+    }
+}
